@@ -16,5 +16,5 @@ target_link_libraries(Common PUBLIC units::units)
 
 file(GLOB_RECURSE TEST_FILES test/*.cpp)
 add_executable(CommonTest ${TEST_FILES})
-target_link_libraries(CommonTest PRIVATE Common)
+target_link_libraries(CommonTest PRIVATE Common) 
 target_link_libraries(CommonTest PRIVATE GTest::gtest GTest::gtest_main)
